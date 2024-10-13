@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:id="@+id/calcul">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:background="#0000FF"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Calculatrice"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Calculatrice"
+        android:textColor="#FFA500"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/texte1"
+
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:hint="Entier 1"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/texte2"
+            android:layout_width="200dp"
+            android:layout_height="54dp"
+            android:hint="Entier 2"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/r3"
+            android:text="*"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/r4"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textSize="20sp"
+        android:background="#586161"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Résultat"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+
+</LinearLayout>
